@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BMI"
+             x:Class="BMI.MainPage">
+
+    <StackLayout BackgroundColor="Olive">
+        <!-- Place new controls here -->
+        <Label Text="BMI Calculator"
+           x:Name="lblname"
+           FontSize="Medium"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+        
+        <!--First entry box for kg-->
+        <Entry Placeholder="Enter weight in kilograms"
+            x:Name="entryWeight"
+            BackgroundColor="Olive"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"/>
+        
+        <!--Second entry box for height-->
+        <Entry Placeholder="Enter height in metres"
+            x:Name="entryHeight"
+             BackgroundColor="Olive"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"/>
+        
+        <!--Calculate button-->
+        <Button Text="Calculate" 
+           x:Name="btnCalcLabel"
+           BorderRadius="10"
+           BackgroundColor="DarkOliveGreen"
+           Clicked="BtnCalcLabel_Clicked"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"/>
+        
+        <!--Display the BMI result-->
+        <Label Text="Your BMI result will be displayed here."
+           x:Name="bmiResultLbl"
+           FontSize="Medium"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"/>
+
+        <Label Text=""
+           x:Name="bmiResultWords"
+           FontSize="Medium"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"/>
+
+
+    </StackLayout>
+
+</ContentPage>
